@@ -5,7 +5,6 @@ import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
 export default function Home({ allPostsData }) {
-  console.log('all', allPostsData);
   return (
     <Layout home>
       <Head>
@@ -13,8 +12,8 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>Hi there, I'm Maximiliano Tulian. This is my first page with Next.Js</p>
-        <p>(This is a sampe website - you'll be building a site like this 
-          <a href="https://nextjs.org/learn"> our Next.js tutorial</a>.)
+        <p>The blog was created by following 
+          <a href="https://nextjs.org/learn"> our Next.js tutorial</a>.
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
